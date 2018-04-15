@@ -1,3 +1,4 @@
+#include "game_node.h"
 #include <iostream>
 #include <vector>
 
@@ -12,11 +13,14 @@ int main() {
     cout << "The total number of rounds cannot be negative." << endl;
     return 0;
   }
+  const int Rounds = n;
   cout << "Enter the money with each player at the beginning of the game: ";
   cin >> m;
   if (m < 0) {
     cout << "The money with each player at the beginning of the game cannot be negative." << endl;
     return 0;
   }
+  const int Money = m;
+  GameNode *root = new GameNode(1);
   return 0;
 }
