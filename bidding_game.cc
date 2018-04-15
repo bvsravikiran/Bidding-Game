@@ -21,6 +21,11 @@ int main() {
     return 0;
   }
   const int Money = m;
-  GameNode *root = new GameNode(1);
+  int node_counter = 1;
+  GameNode *root = nullptr;
+  GameNode *node = new GameNode(node_counter);
+  if (!root) {
+    root = node;
+  }
   return 0;
 }
