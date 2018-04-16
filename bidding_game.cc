@@ -1,6 +1,5 @@
 #include "game_node.h"
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -27,5 +26,7 @@ int main() {
   if (!root) {
     root = node;
   }
+
+  cout<<endl<<"Bye."<<endl;
   return 0;
 }
